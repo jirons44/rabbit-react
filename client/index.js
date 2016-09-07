@@ -7,6 +7,7 @@ import About from './components/About';
 import Faq from './components/Faq';
 import Register from './components/Register';
 import Login from './components/Login';
+import Device from './components/Device';
 import Profile from './components/Profile';
 import Exercises from './components/Exercises';
 
@@ -24,6 +25,8 @@ render(
       <Route path="login" component={Login} />
       <Route path="profile" component={Profile} />
       <Route path="exercises" component={Exercises} />
+      <Route path="devices" component={Device} />
+
     </Route>
   </Router>
   , document.getElementById('root'));

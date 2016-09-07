@@ -46,10 +46,11 @@ export default class Nav extends React.Component {
     if (this.state.active) {
       links.push(<li key={0}><Link to="/profile"><i className="fa fa-key fa-heartbeat" /> Profile</Link></li>);
       links.push(<li key={1}><Link to="/exercises"><i className="fa fa-key fa-bullhorn" /> Exercises</Link></li>);
-      links.push(<li key={2}><a href="#" onClick={this.logout}><i className="fa fa-key fa-unlock" /> {this.state.user.username}</a></li>);
+      links.push(<li key={2}><Link to="/devices"><i className="fa fa-key fa-rocket" /> Devices</Link></li>);
+      links.push(<li key={3}><a href="#" onClick={this.logout}><i className="fa fa-key fa-unlock" /> {this.state.user.username}</a></li>);
     } else {
-      links.push(<li key={3}><Link to="/register"><i className="fa fa-user fa-fw" /> Register</Link></li>);
-      links.push(<li key={4}><Link to="/login"><i className="fa fa-key fa-lock" /> Login</Link></li>);
+      links.push(<li key={4}><Link to="/register"><i className="fa fa-user fa-fw" /> Register</Link></li>);
+      links.push(<li key={5}><Link to="/login"><i className="fa fa-key fa-lock" /> Login</Link></li>);
     }
 
     return (
